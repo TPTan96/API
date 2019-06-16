@@ -38,7 +38,7 @@ var server Dao
 var db *mgo.Database
 
 func initmongoDB() (*mgo.Collection, *mgo.Collection) {
-	server.Server = "localhost:27017"
+	server.Server = "db:27017"
 	server.Database = "test"
 	clcity, cluser := server.Conect()
 	return clcity, cluser
